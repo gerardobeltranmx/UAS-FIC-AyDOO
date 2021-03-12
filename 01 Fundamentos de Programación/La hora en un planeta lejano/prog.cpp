@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
     minutos = restoSeg / 50;
 
     segundos = restoSeg % 50;
-
+    
     cout << dias << " " << horas<< " " << minutos << " " << segundos<< endl; 
 
     return 0;
