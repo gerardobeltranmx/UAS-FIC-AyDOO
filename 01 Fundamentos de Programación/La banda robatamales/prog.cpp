@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-  int dato;
   int T, B, M, RM, L, RB, TB, TS;
   cin >> T;
   cin >> B;
@@ -15,7 +14,7 @@ int main() {
 
   TB = M / RB; // tamales para cada bandido restante
 
-  TS = M % RB; // el sobrante 
+  TS = M % RB; // el sobrante de tamales
 
   L = L + TS; // el lider se lleva lo que le sobra a los bandidos
  
