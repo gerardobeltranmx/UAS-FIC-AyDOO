@@ -3,52 +3,35 @@
 using namespace std;
 
 int main() {
-  
-    float cantidad, suma, promedio;
-
+    double cantidad, suma=0, promedio;
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
     cin >> cantidad;
     suma = suma + cantidad;
-
-    cin >> cantidad;
-    suma = suma + cantidad;
-
-  
     cin >> cantidad;
     suma = suma + cantidad;
 
     promedio = suma /12;
 
-    cout <<"$"<< fixed << setprecision(2) << promedio << endl;
+    cout <<"$" << fixed << setprecision(2) << promedio;
   
    return 0;
 }
