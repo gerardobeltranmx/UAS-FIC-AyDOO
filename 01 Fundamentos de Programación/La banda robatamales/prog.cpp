@@ -19,10 +19,7 @@ int main() {
 
   L = L + TS; // el lider se lleva lo que le sobra a los bandidos
  
-  cout << L; // los tamales que se lleva el lider
+  cout << L<< endl; // los tamales que se lleva el lider
 
-
-
-  
    return 0;
 }
