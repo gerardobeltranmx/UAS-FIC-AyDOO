@@ -1,19 +1,22 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
  
- int a, b;
+ int a, b, m;
 // Entrada de datos
  cin >> a;
  cin >> b;
 
  if (a>b)
-    cout << a; // a es el mayor
+    m=a; // a es el mayor
  else if (b>a)
-    cout << b; // b es el mayor
+    m=b; // b es el mayor
  else 
-    cout << a; // son iguales
+    m = a; // son iguales
   
+  cout << fixed << "$" <<setfill('*') <<setw(5) << m<<endl ;
+
    return 0;
 }
