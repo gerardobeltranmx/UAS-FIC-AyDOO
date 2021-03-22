@@ -8,24 +8,24 @@ int main() {
 
     if (N % 2 == 0){
         N = N / 2;
-        cont = cont + 1;
+        cont++;
     }    
     else{
         N = N + 1;    
-        cont = cont + 1;
+        cont++;
     }
 
     if (N>=100){
         N = N / 100;
-        cont = cont + 1;
+        cont++;
     }
     else if(N>=10){
         N = N / 10;
-        cont = cont + 1; 
+        cont++; 
     }
     if ( N % 3 == 0){
         N = N - 1;
-        cont = cont + 1;
+        cont++;
     }    
 
     cout << N << " " << cont << endl;
