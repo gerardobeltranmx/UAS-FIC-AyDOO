@@ -4,6 +4,14 @@ using namespace std;
 int main() {
  int mes;
  cin >> mes;
+/*
+if (mes == 1 or mes == 2 or mes == 12)
+      cout << "INVIERNO";
+else if (mes==3 or mes ==4 or mes==5)
+      cout << "PRIMAVERA";
+...
+*/
+
  switch (mes)
  {
    case 1:
