@@ -2,12 +2,8 @@
 using namespace std;
 
 int main() {
- 
     int a, b, c, mayor, menor;
-
-    cin >> a >> b >> c;
-
- 
+    cin >> a >> b >> c; 
     if ( a>b and a > c){ // es mayor la a?
         mayor = a;
         if (b < c)
@@ -22,17 +18,13 @@ int main() {
         else  
           menor = c;    
     }
-    else{
+    else{   // el mayor es c!
         mayor = c;
         if (a < b)
              menor = a;
         else
             menor = b;         
     }
-
-cout << menor << endl << mayor<< endl;
- 
-
-  
-   return 0;
+    cout << menor << endl << mayor<< endl;
+    return 0;
 }
