@@ -2,12 +2,8 @@
 using namespace std;
 
 int main() {
- 
  int mes;
-
-
  cin >> mes;
-
  switch (mes)
  {
    case 1:
