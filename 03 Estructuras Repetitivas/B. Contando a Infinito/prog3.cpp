@@ -6,10 +6,10 @@ int main() {
   int n, i=1;
   cin >> n;
 
-  do{
+
+  for (i=1; i<=n; i++){
       cout << i << endl;
-      i++;  
-  }while (i <= n);
+  }
   
    return 0;
 }

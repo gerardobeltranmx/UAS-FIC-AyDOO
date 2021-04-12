@@ -6,9 +6,11 @@ int main() {
   int n, i;
   cin >> n;
 
-  for (i=1; i<=n; i++){
+do{
       cout << i << endl;
-  }
+      i++;  
+  }while (i <= n);
   
+
    return 0;
 }
