@@ -11,5 +11,5 @@ int main() {
       cout << N <<" X " << i << " = " << resultado << endl;
       i++;
   }
-   return 0;
+  return 0;
 }
