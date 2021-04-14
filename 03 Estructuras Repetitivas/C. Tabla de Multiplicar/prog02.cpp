@@ -2,13 +2,14 @@
 using namespace std;
 
 int main() {
-  int N, i, resultado;
+  int N, i=1, resultado;
 
   cin >> N;
 
-  for (i=1; i<=10; i++){
+  while (i<=10){
       resultado =  N * i;
       cout << N <<" X " << i << " = " << resultado << endl;
+      i++;
   }
    return 0;
 }
