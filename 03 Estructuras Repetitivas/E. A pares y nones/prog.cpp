@@ -25,6 +25,11 @@ int main() {
   PromedioAparicio =  SumaAparicio/ContarAparicio;
   PromedioNonila = SumaNonila/ContarNonila;
   
-  
+  if (PromedioAparicio>PromedioNonila)
+       cout << "APARICIO\n";
+  else if (PromedioNonila>PromedioAparicio)
+       cout << "NONILA" << endl;     
+  else
+      cout << "EMPATE!" << endl;
    return 0;
 }
