@@ -3,17 +3,20 @@ using namespace std;
 
 int main() {
  
- int M, N, i, j;
+ int M, N, i=0, j;
 
  cin >> M;
 
- for (i=0; i<M; i++){
+ while (i<M){
 
     cin >> N;
-    for (j=0; j<N; j++){
+    j=0;
+    while (j<N){
        cout <<"<3";
+       j++;
     }
     cout << endl;
+    i++;
  }
 
    return 0;
