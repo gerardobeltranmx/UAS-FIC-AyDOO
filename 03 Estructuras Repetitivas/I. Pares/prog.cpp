@@ -2,7 +2,8 @@
 using namespace std;
 
 int main() {
-  int N, i, valor, pares=0;
+  int N, i,  pares=0;
+  long valor;
   cin >> N;
 
   for (i=0; i<N; i++){
@@ -12,7 +13,6 @@ int main() {
        pares++;
     }
   }
-
   if (pares == 0)
        cout << ":(";
 
