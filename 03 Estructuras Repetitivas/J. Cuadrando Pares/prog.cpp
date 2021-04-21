@@ -10,7 +10,7 @@ int main() {
       r = N % 10;  // digito de la derecha
       N = N / 10;  // digitos sobrantes
       
-      if (r % 2)
+      if ((r % 2) == 0 )
          contar++;
    }
   
