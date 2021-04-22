@@ -14,6 +14,8 @@ int main() {
    else
      N = N * 3 + 1;
 
+   cout << N;  
+
   }
    
    return 0;
