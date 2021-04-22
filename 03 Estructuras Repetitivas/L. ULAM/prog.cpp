@@ -14,7 +14,7 @@ int main() {
    else
      N = N * 3 + 1;
 
-   cout << N;  
+   cout << N << " ";  
 
   }
    
