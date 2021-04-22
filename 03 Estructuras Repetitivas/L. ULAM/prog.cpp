@@ -7,18 +7,17 @@ int main() {
 
    cin >> N;
 
-   cout << N << " ";
+   
 
   while (N!=1){    
-
+   cout << N << " ";
+   
    if (N%2==0)
       N = N / 2;
    else
      N = N * 3 + 1;
 
-   cout << N << " ";     
-
   }
-   
+   cout << N << " "; 
    return 0;
 }
