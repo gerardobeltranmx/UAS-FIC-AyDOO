@@ -4,30 +4,32 @@ using namespace std;
 
 int main() {
 
-   int NumElementos, i, dato;
+   int NumElementos, NumListas, i, dato, k;
    float prom; 
    int mayor, menor,suma;
 
-   cin >> NumElementos;
-   suma = 0;
-   menor = 1001;
-   mayor = 0;
-   for (i=0;i<NumElementos; i++){
+  cin >> NumListas; // Numeros de listas
+   for (k=0; k<  NumListas; k++){
+      cin >> NumElementos;
+      suma = 0;
+      menor = 1001;
+      mayor = 0;
+      for (i=0;i<NumElementos; i++){
 
-      cin >> dato;
+         cin >> dato; // Datos de la lista
 
-      if (dato>mayor)
-             mayor=dato;
-      if (dato<menor)
-          menor=dato;
+         if (dato>mayor)
+               mayor=dato;
+         if (dato<menor)
+            menor=dato;
 
-      suma += dato;
-   }
-   prom = (float)suma  / NumElementos;
-   if (suma % 2 == 0)
-     cout << prom << " "<< menor << " " << mayor  << endl;
-   else
-      cout << fixed << setprecision(3)<<prom << " "<< menor << " " << mayor  << endl;
-      
+         suma += dato;
+      }
+      prom = (float)suma  / NumElementos;
+      if (suma % NumElementos == 0)
+      cout <<fixed << setprecision(0) << prom << " "<< menor << " " << mayor  << endl;
+      else
+         cout << fixed << setprecision(3)<<prom << " "<< menor << " " << mayor  << endl;
+   }      
    return 0;
 }
