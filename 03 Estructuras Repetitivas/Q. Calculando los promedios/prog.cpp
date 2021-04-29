@@ -27,6 +27,7 @@ int main() {
       }
       prom = (float)suma  / NumElementos;
       if (suma % NumElementos == 0)
+      //cout << (int)prom << " "<< menor << " " << mayor  << endl;
       cout <<fixed << setprecision(0) << prom << " "<< menor << " " << mayor  << endl;
       else
          cout << fixed << setprecision(3)<<prom << " "<< menor << " " << mayor  << endl;
