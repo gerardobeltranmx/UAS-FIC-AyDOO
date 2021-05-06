@@ -1,13 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
-int suma (int a, int b){
-   int c;
-   c = a + b;
-   return c;
-}
-
+int suma(int a, int b);
 int main() {
  
  int x = 10;
@@ -24,4 +18,10 @@ int main() {
  cout << suma(56, 45) << endl;
   
  return 0;
+}
+
+int suma (int a, int b){
+   int c;
+   c = a + b;
+   return c;
 }
