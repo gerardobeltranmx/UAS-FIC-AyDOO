@@ -1,20 +1,21 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-double AreaCirculo(int radio);
+double AreaCirculo(double radio);
 int main() {
  
-   int radio;
+   double r;
    double resultado;
-   cin >> radio;
+   cin >> r;
 
-   resultado  = AreaCirculo(radio);
-   cout << resultado  << endl;
+   resultado  = AreaCirculo(r);
+   cout << fixed<<setprecision(2)<< resultado  << endl;
    
    return 0;
 }
 
-double AreaCirculo(int radio){
+double AreaCirculo(double radio){
    double area;
    area = 3.1416 * radio * radio;
    return area;
