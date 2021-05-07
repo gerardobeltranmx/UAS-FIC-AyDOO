@@ -14,7 +14,7 @@ int main() {
 
   volumen = VolumenEsfera(radio);
   
-  cout << fixed << setprecision(2)<<"Volumen: " << volumen << " " << "Superificie:" << superficie<< endl;
+  cout << fixed << setprecision(2)<<"Volumen:" << volumen << " " << "Superficie:" << superficie<< endl;
 
    return 0;
 }
