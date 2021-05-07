@@ -25,8 +25,8 @@ double SuperficieEsfera(double r){
 }
 double VolumenEsfera(double r){
    double v;
-   v = 4 * r * r * r / 3;
-
+   v = 4 * 3.1416 * r * r * r / 3;
+   return v;
 }
 
 
