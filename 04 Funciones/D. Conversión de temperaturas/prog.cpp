@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+int Kelvin(int c);
+int Fahrenheit(int c);
+int Reaumur(int c);
 int main() {
 
    int c;
