@@ -3,9 +3,10 @@ using namespace std;
 
 int main() {
 
-
-
-   return 0;
+   int c;
+   cin >> c;
+   cout << Kelvin(c) << " " << Fahrenheit(c) << " " << Reaumur (c) << endl;
+   return 0; 
 }
 
 int Kelvin(int c){
@@ -22,3 +23,4 @@ int Reaumur(int c){
   int r= c * 0.8;
   return r;
 }
+ 
