@@ -18,9 +18,13 @@ int main() {
 }
 
 void  Temperaturas(int c){
-  int k= c + 273;
-  int  f= (1.8 * c) + 32;
-  int r= c * 0.8;
+//  int k= c + 273;
+//  int  f= (1.8 * c) + 32;
+//  int r= c * 0.8;
+
+   int k = Kelvin(c);
+   int f = Fahrenheit(c);
+   int r = Reaumur(c);
 
   cout << k << " " << f << " " << r << endl;
 
