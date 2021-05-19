@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 double AreaBase(float radio);
 double AreaLateral(float radio, float altura);
@@ -6,10 +7,19 @@ double AreaTotal (float radio, float altura);
 double Volumen(float radio, float altura);
 
 int main() {
- 
-  
- 
-  
+   double r, h, Area, Volumen;
+
+   cin >> r;
+   cin >> h;
+
+    Area = AreaTotal(r,h);
+
+    Volumen = VolumenTotal(r,h);
+
+    cout << "AREA="<< fixed<< setprecision(2)<<Area;
+
+    cout << "VOLUMEN="<< fixed<< setprecision(2)<<Volumen;
+
    return 0;
 }
 
@@ -27,7 +37,7 @@ double AreaTotal (float radio, float altura){
    return AT;
 }
 
-double Volumen(float radio, float altura){
+double VolumenTotal(float radio, float altura){
   double V = AreaBase(radio) * altura;
   return V;
 }
