@@ -4,7 +4,7 @@ using namespace std;
 double AreaBase(float radio);
 double AreaLateral(float radio, float altura);
 double AreaTotal (float radio, float altura);
-double Volumen(float radio, float altura);
+double VolumenTotal(float radio, float altura);
 
 int main() {
    double r, h, Area, Volumen;
