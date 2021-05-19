@@ -2,9 +2,9 @@
 #include <iomanip>
 using namespace std;
 double AreaBase(float radio);
-double AreaLateral(float radio, float altura);
-double AreaTotal (float radio, float altura);
-double VolumenTotal(float radio, float altura);
+double AreaLateral(double radio, double altura);
+double AreaTotal (double radio, double altura);
+double VolumenTotal(double radio, double altura);
 
 int main() {
    double r, h, Area, Volumen;
@@ -23,21 +23,21 @@ int main() {
    return 0;
 }
 
-double AreaBase(float radio){
+double AreaBase(double radio){
     double AB = 3.1416 * radio * radio;
     return AB;
 }
-double AreaLateral(float radio, float altura){
+double AreaLateral(double radio, double altura){
     double AL = 2 * 3.1416 * radio * altura;
     return AL;
 }
 
-double AreaTotal (float radio, float altura){
+double AreaTotal (double radio, double altura){
     double AT = AreaLateral(radio, altura) + 2 * AreaBase(radio);
    return AT;
 }
 
-double VolumenTotal(float radio, float altura){
+double VolumenTotal(double radio, double altura){
   double V = AreaBase(radio) * altura;
   return V;
 }
