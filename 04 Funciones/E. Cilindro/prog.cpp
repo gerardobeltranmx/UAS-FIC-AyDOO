@@ -16,9 +16,9 @@ int main() {
 
     Volumen = VolumenTotal(r,h);
 
-    cout << "AREA="<< fixed<< setprecision(2)<<Area;
+    cout << "AREA="<< fixed<< setprecision(2)<<Area<<endl;
 
-    cout << "VOLUMEN="<< fixed<< setprecision(2)<<Volumen;
+    cout << "VOLUMEN="<< fixed<< setprecision(2)<<Volumen<< endl;
 
    return 0;
 }
