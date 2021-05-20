@@ -13,7 +13,7 @@ int N, i;
      cin >> arr[i];
   }
 
-  // Imprime un de N enteros
+  // Imprime  N enteros de forma inversa
   for (i=N-1; i>=0; i--){
 
      cout << arr[i] << " ";
