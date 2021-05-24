@@ -30,7 +30,7 @@ int main() {
       }
       // Porcentaje del caso/grupo
       porcentaje = ((double)contar / n) * 100 ;
-      cout << fixed << setprecision(3) << porcentaje<<endl; 
+      cout << fixed << setprecision(3) << porcentaje<<"%"<<endl; 
    }
    return 0;
 }
