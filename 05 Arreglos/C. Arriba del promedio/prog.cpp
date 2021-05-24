@@ -4,28 +4,33 @@ using namespace std;
 
 int main() {
   
-   int n, i, suma=0, contar=0;
+   int c, n, k, i, suma, contar;
    int calif[1000];
    double prom, porcentaje;
 
-   cin >> n;
+   cin >> c; // Numero de casos/grupos
 
-   for (i=0; i<n ; i++)
+   for(k=0; k<c; k++)
    {
-     cin >> calif[i];
-      suma += calif[i];
-      // suma = suma + calif[i];
-   }
+      cin >> n; // Numero de estudiantes del caso/grupo
+      suma=0;
+      contar=0;
+      for (i=0; i<n ; i++)
+      {
+      cin >> calif[i];
+         suma += calif[i]; // Suma de calificaciones del caso/grupo
+         // suma = suma + calif[i];
+      }
 
-   prom = (double) suma / n;  
-   
-   for (i=0; i<n; i++){
-     if (calif[i]> prom)
-         contar++;
+      prom = (double) suma / n;  // Promedio del caso/grupo
+      
+      for (i=0; i<n; i++){
+      if (calif[i]> prom)
+            contar++;
+      }
+      // Porcentaje del caso/grupo
+      porcentaje = ((double)contar / n) * 100 ;
+      cout << fixed << setprecision(3) << porcentaje<<endl; 
    }
-
-   porcentaje = ((double)contar / n) * 100 ;
-   cout << fixed << setprecision(3) << porcentaje; 
-  
    return 0;
 }
