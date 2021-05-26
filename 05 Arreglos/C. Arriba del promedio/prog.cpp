@@ -20,9 +20,9 @@ int main() {
       cin >> calif[i];
          suma += calif[i]; // Suma de calificaciones del caso/grupo
          // suma = suma + calif[i];
-      }
+      }  
 
-      prom = (double) suma / n;  // Promedio del caso/grupo
+      prom  = (double) suma / n;  // Promedio del caso/grupo
       
       for (i=0; i<n; i++){
       if (calif[i]> prom)
