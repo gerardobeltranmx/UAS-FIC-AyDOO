@@ -15,7 +15,7 @@ int main() {
    for(i=0; i< N; i++)
       cin >> arr2[i];
 
-   for (i=0; i<N; i++){
+   for (i=0; i<N; i++){ // acceso en paralelo
       suma = arr1[i] + arr2[i];
       cout << suma << " ";
    }
