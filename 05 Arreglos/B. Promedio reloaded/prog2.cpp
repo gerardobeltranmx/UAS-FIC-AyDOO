@@ -35,7 +35,7 @@ double promedioArreglo(int datos[], int N){
   return promedio;
 }
 // cuenta mayores al promedio
-int contarMayoresPromedio(int datos[], int N, double promedio){
+int cuentaMayoresPromedio(int datos[], int N, double promedio){
   int contar=0, i;
   for (i=0; i<N; i++){
     if (datos[i]>promedio){
