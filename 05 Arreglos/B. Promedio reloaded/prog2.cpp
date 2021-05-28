@@ -3,12 +3,16 @@ using namespace std;
 
 double promedioArreglo(int datos[], int N);
 int cuentaMayoresPromedio(int datos[], int N, double promedio);
+
+void mensaje(){
+  cout << "Hola";
+}
+
 int main() {
  
   int N, i, contar=0;
   double promedio;
   int datos[100];
-  
   cin >> N;
   
   for (i=0; i< N; i++){
@@ -20,7 +24,7 @@ int main() {
   
   cout << contar;
 
-   return 0;
+  return 0;
 }
 // Calcula promedio de una arreglo de tamaño N
 double promedioArreglo(int datos[], int N){
