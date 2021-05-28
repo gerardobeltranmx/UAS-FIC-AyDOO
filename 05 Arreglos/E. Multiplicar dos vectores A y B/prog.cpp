@@ -28,11 +28,16 @@ int main() {
 
 void multiplica(int arre1[], int tam1, int arre2[], int tam2){
    int i;
+
+   cout << "Los elementos del vector resultante son:"<< endl;
+
    for (i=0; i < tam1; i++){
      if(i<tam2)
       cout << arre1[i] * arre2[i] << " ";
      else
       cout << arre1[i] << " ";
    }
+
+   
 
 }
