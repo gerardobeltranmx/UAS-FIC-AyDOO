@@ -3,16 +3,17 @@ using namespace std;
 void multiplica(int arre1[], int tam1, int arre2[], int tam2);
 int main() {
    int m,n,i;
+   int a1[100];
+   int a2[100];
+
    // arreglo 01
    cin >> m;
-   int a1[m];
 
    for (i=0; i<m; i++)
       cin >> a1[i];
   
   // arreglo 02
    cin >> n;
-      int a2[n];
 
    for (i=0; i<n; i++)
       cin >> a2[i];
