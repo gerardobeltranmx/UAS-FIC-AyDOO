@@ -17,13 +17,11 @@ int main() {
    
    qsort(datos, N, sizeof(int), asc);
 
-   for (i=0; i<N-1 and consecutivo==true; i++ ){
-      if ((datos[i]+1)==datos[i+1])
-         consecutivo=true;
-      else
-         consecutivo=false;   
-
+   for (i=0; i<N-1 and consecutivo == true; i++ ){
+      if ((datos[i]+1) != datos[i+1])
+         consecutivo=false;
    }
+
    if (consecutivo==true)
        cout << "SI";
    else
