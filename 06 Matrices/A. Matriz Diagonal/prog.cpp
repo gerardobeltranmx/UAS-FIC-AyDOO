@@ -5,7 +5,7 @@ int main() {
    int N,i,j, dato;
    int mat[100][100];
    bool estado=true;
-   
+
    cin >> N;
 
    // entrada de datos a la matriz
@@ -16,7 +16,8 @@ int main() {
 
    dato = mat[0][0];
 
-   for (i=0;i<N && estado==true;i++){
+   for (i=1;i<N && estado==true;i++){
+    //  cout << mat[i][i]<< " ";
       if (dato!=mat[i][i]){
          estado = false;
       }
