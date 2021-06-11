@@ -4,7 +4,7 @@ using namespace std;
 int main() {
  
    int N, M, i, j;
-   //int mat[1000][1000];
+   // int mat[100][100];
    cin >> M >> N;
    int mat[M][N];
 
