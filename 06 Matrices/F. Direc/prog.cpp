@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
    
-   int n, m, p, k;
+   int n, m, p, k, i,j,a,b, q,r ;
    double suma, prom;
    
    //int calif[1000][1000];
@@ -15,7 +15,7 @@ int main() {
  
    for(i=0; i<n; i++)
       for (j=0;j<m; j++)
-         cin >> calf[i][j];
+         cin >> calif[i][j];
 
    // entrada al numero de preguntas del director
    cin >> p;
