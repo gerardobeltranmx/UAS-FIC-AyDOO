@@ -1,40 +1,40 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int main() {
    
    int n, m, p, k, i,j,a,b, q,r ;
-   double suma, prom;
+   int suma, prom, cont;
    
    //int calif[1000][1000];
    // entrada a numero de alumnos (n) y calificaciones (m) 
-   cout << "Tamaño de matriz: " << endl; 
-   cin >> n >> m;
+    cin >> n >> m;
 
    int calif[n][m];
- 
-   for(i=0; i<n; i++)
-      for (j=0;j<m; j++)
-         cin >> calif[i][j];
 
+   for (i=0;i<n; i++)
+      for (j=0; j<m; j++)
+        cin >> calif[i][j];
 
    // entrada al numero de preguntas del director
-   cout << "Numero de preguntas:" << endl; 
    cin >> p;
 
    for (k=0; k<p; k++){
-      cout << "Pregunta " << k << ":" << endl;
+      suma = 0;
+      cont = 0;
       cin >> a >> b >> q >> r; // entrada a las preguntas
-      for (i=a-1; i<b-1; i++){
-         suma=0;
-         for (j=q-1; j<r-1; j++){
-               suma+=calif[i][j];
-         }
-         prom = suma / (r-q-1);
-         cout << "promedio de " << k << ": "<< fixed<< setprecision(0)<< prom << endl;
+      
+      for (i=a; i<=b; i++){ // recorre alumnos
+         for (j=q; j<=r; j++){ // recorre materias de cada alumno
+            suma += calif[i-1][j-1];
+            cont++;
+         }   
       }
+      prom = suma / cont;
+      cout << prom << endl;
    }
+
+
 
    return 0;
 }
