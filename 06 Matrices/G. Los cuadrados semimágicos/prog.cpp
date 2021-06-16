@@ -34,8 +34,19 @@ int main() {
            sm=0; 
        }         
    } 
+   // Revision de diagonal 1
+   if (sm==1){
+      for (suma=0, k=0 ; k<N; k++){
+         suma+=mat[k][k];
+      }
+      if (suma!=aux) 
+         sm = 0;
+   }
 
+// Revision de diagonal 2
    
+
+
 
 cout << sm << endl ;
    return 0;
