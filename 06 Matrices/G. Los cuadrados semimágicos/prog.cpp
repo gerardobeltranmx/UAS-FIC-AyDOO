@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-   int N, i,j, suma, aux;
+   int N, i,j,k, suma, aux;
    int sm = 1;
    cout << N;
    
