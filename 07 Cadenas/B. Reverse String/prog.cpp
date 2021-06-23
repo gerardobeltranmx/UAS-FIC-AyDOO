@@ -11,7 +11,7 @@ int main() {
 
  len = strlen(cadena);
 
- for (i=len; i>=0; i--)
+ for (i=len-1; i>=0; i--)
    cout << cadena[i];  
 
 
