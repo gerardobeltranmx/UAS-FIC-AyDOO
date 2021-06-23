@@ -7,7 +7,7 @@ int main() {
    
    char S[81];
    int len, i, numVocales=0, numConsonantes;
-   cin.getline(S,80);
+   cin.getline(S,81);
  
    len = strlen(S);
    for (i=0; i<len; i++){
