@@ -3,10 +3,11 @@ using namespace std;
 
 int main() {
  
- int N, i;
+ int N, i,k, len;
  char pwd[100]; 
- bool valida = true;
+ bool valido = true;
  cin >> N; // entrada al numero de contraseña
+ getchar();
 // Recorre todas las N contraseñas
 for (i=0; i<N; i++){
    // Lee una contraseña
@@ -14,7 +15,7 @@ for (i=0; i<N; i++){
    // Determina el tamaño de la contraseña
    len = strlen(pwd);
    if (len>=6 and len <=32){ // Evalua si cumple el tamaño requerido
-      for (k=0;k<len and valida==true; k++){ // Recorreo la contraseña
+      for (k=0;k<len and valido==true; k++){ // Recorreo la contraseña
          if (pwd[k]>='A' and pwd[k] <='Z' ){
                valido=true;
          }
@@ -27,7 +28,7 @@ for (i=0; i<N; i++){
          else
             valido=false;
 
-         if (pwd[k]=>'0' and pwd[k]<='9' ){
+         if (pwd[k]>='0' and pwd[k]<='9' ){
               valido=true; 
          } 
          else
@@ -36,10 +37,14 @@ for (i=0; i<N; i++){
 
    }
    else
-      valida=false;
+      valido=false;
 
 
-}
+   if (valido==true)
+         cout << pwd << ":" << " Valido"<< endl;
+   else
+      cout << pwd << ":" << " Invalido"<< endl ;
+ }
 
-   return 0;
+ return 0;
 }
