@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
  
- int N, i,k, len;
+ int N, i,k, len, contMay, contMin, contDig, contOtros;
  char pwd[100]; 
  bool valido = true;
  cin >> N; // entrada al numero de contraseña
@@ -12,35 +12,28 @@ int main() {
 for (i=0; i<N; i++){
    // Lee una contraseña
    cin.getline(pwd,100);
+   contMay=0;
+   contMin=0;
+   contDig=0;
+   contOtros=0;
    // Determina el tamaño de la contraseña
    len = strlen(pwd);
    if (len>=6 and len <=32){ // Evalua si cumple el tamaño requerido
-      for (k=0;k<len and valido==true; k++){ // Recorreo la contraseña
-         if (pwd[k]>='A' and pwd[k] <='Z' ){
-               valido=true;
-         }
-         else 
-            valido = false;
-
-         if (pwd[k]>='a' and pwd[k] <='z'){
-              valido=true; 
-         }
-         else
-            valido=false;
-
-         if (pwd[k]>='0' and pwd[k]<='9' ){
-              valido=true; 
+      for (k=0;k<len ; k++){ // Recorreo la contraseña
+         if (pwd[k]>='A' and pwd[k] <='Z' )
+               contMay++;
+         else if (pwd[k]>='a' and pwd[k] <='z')
+                  contMin++;
+         else if (pwd[k]>='0' and pwd[k]<='9' ){
+              contDig++; 
          } 
          else
-           valido=false;
+           contOtros++;
       }
-
-   }
-   else
-      valido=false;
+   
 
 
-   if (valido==true)
+   if ()
          cout << pwd << ":" << " Valido"<< endl;
    else
       cout << pwd << ":" << " Invalido"<< endl ;
