@@ -30,14 +30,12 @@ for (i=0; i<N; i++){
          else
            contOtros++;
       }
-   
-
-
-   if ()
-         cout << pwd << ":" << " Valido"<< endl;
-   else
-      cout << pwd << ":" << " Invalido"<< endl ;
- }
+   }
+         if (contMay>0 and contMin>0 and contDig>0 and contOtros==0)
+               cout << pwd << ":" << " Valido"<< endl;
+         else
+            cout << pwd << ":" << " Invalido"<< endl ;
+}
 
  return 0;
 }
