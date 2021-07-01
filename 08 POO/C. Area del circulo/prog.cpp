@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class Circulo {
@@ -10,7 +11,8 @@ class Circulo {
       }
       double ObtenerArea(){
          double area;
-         area = 3.14159 * radio;
+         area = 3.14159 * radio*radio;
+         return area;
       }
 };
 
@@ -19,7 +21,7 @@ int main() {
    Circulo fig;
    cin >> radio;
    fig.CambiarRadio(radio);
-   cout << fig.ObtenerArea()<< endl;
-    
+   cout << fixed << setprecision(2)<<fig.ObtenerArea()<< endl;
+   
    return 0;
 }
