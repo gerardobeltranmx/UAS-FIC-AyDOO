@@ -14,6 +14,12 @@ class Circulo {
          area = 3.14159 * radio*radio;
          return area;
       }
+
+      double ObtenerPerimetro(){
+         double perimetro;
+         perimetro = 2 * 3.14159 * radio;
+         return perimetro;
+      }
 };
 
 int main() {
