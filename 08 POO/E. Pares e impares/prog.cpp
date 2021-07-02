@@ -37,7 +37,16 @@ class numeros{
 
 int main() {
  
+   int N,i;
+   int datos[N];
+   numeros info; 
+   for (i=0; i<N; i++){
+       cin >> datos[i];
+   }
+   info.iniciar(datos, N);
+   cout << info.pares() << " " << info.impares()<< endl;
+
+
    
- 
    return 0;
 }
