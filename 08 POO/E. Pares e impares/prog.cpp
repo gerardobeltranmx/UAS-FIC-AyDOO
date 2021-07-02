@@ -38,8 +38,12 @@ class numeros{
 int main() {
  
    int N,i;
-   int datos[N];
    numeros info; 
+
+   cin >> N;
+
+   int datos[N];
+
    for (i=0; i<N; i++){
        cin >> datos[i];
    }
