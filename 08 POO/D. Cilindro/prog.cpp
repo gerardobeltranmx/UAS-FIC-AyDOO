@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>
+
 using namespace std;
 
 class Circulo {
@@ -10,13 +12,13 @@ class Circulo {
       }
       double ObtenerArea(){
          double area;
-         area = 3.14159 * radio*radio;
+         area = 3.1416 * radio*radio;
          return area;
       }
 
       double ObtenerPerimetro(){
          double perimetro;
-         perimetro = 2 * 3.14159 * radio;
+         perimetro = 2 * 3.1416 * radio;
          return perimetro;
       }
 };
@@ -38,10 +40,12 @@ class Cilindro{
    }
    double ObtenerArea(){
       Circulo base;
+      base.CambiarRadio(radio);
       double area;
-      area = 2*base.ObtenerArea(); // + base.ObtenerPerimetro()*altura;
+            area = 2*base.ObtenerArea() + base.ObtenerPerimetro()*altura;
       return area;
    }
+   
 
 };
 
@@ -52,8 +56,8 @@ int main() {
 
   Cilindro tanque;
   tanque.CambiarDimension(radio, altura);
-  cout << "AREA="<<tanque.ObtenerArea() << endl;
-  cout << "VOLUMEN="<<tanque.ObtenerVolumen()<< endl;
+  cout << fixed<<setprecision(2) << "AREA="<< tanque.ObtenerArea() << endl;
+  cout << fixed<< setprecision(2)<< "VOLUMEN="<<tanque.ObtenerVolumen()<< endl;
 
    return 0;
 }
