@@ -8,6 +8,7 @@ using namespace std;
 double areaCirculo (double radio){
     double area;
     area = PI * radio * radio;
+    return area;
 }
 double perimetroCirculo(double radio){
     double perimetro ;
