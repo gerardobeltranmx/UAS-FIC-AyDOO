@@ -13,20 +13,12 @@ for (int i=0; i < N; i++){
 }
 // Entrada a datos del segundo arreglo
 for (int i=0; i < N; i++){
-    //cin >> a2[i]; 
     cin >> dato; 
 
     suma = a1[i] + dato;
        cout << suma << " ";
 }
-// suma ambos arreglos
-//for (int i=0; i < N; i++){
-//    a3[i] = a1[i] + a2[i];
-//}
-// Generamos salida de a3
-//for (int i=0; i <N; i++){
-//  cout << a3[i] << " ";
-//}
+
 cout << endl;
 
 

@@ -16,14 +16,7 @@ for (int i=0; i < N; i++){
     a3[i] = a1[i] + a2[i];
        cout << a3[i] << " ";
 }
-// suma ambos arreglos
-//for (int i=0; i < N; i++){
-//    a3[i] = a1[i] + a2[i];
-//}
-// Generamos salida de a3
-//for (int i=0; i <N; i++){
-//  cout << a3[i] << " ";
-//}
+
 cout << endl;
 
 
