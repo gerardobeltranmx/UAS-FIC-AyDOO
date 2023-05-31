@@ -4,7 +4,6 @@ int main(){
     int N;
     cin >> N;
     int mat1[N][N], mat2[N][N], mat3[N][N];
-
     // Entra matriz 1
     for (int i=0; i<N; i++)
         for (int j=0; j<N; j++)
